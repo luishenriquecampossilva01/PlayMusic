@@ -56,4 +56,64 @@ s.config(command=listbox.yview)
 for item in lista:
     listbox.insert(END,item)
 
+#configurando frame baixo
+l_rodando = Label(frame_baixo,text='Escolha uma Musica', width=44,justify=LEFT,anchor='nw',font=('Ivy 10'),bg=co1,fg=co4)
+l_rodando.place(x=0, y= 1)
+
+
+
+img_2 = Image.open('icon1.png')
+img_2 = img_2.resize((30,30))
+img_2 = ImageTk.PhotoImage(img_2)
+
+
+b_anterior = Button(frame_baixo, width=40,height=40,image=img_2,font=('Ivy 10 bold'),relief=RAISED,overrelief=RIDGE,bg=co3,fg=co4)
+b_anterior.place(x=38, y= 35)
+
+
+#botão 3
+img_3 = Image.open('icon1.png')
+img_3 = img_3.resize((30,30))
+img_3 = ImageTk.PhotoImage(img_3)
+
+
+b_play = Button(frame_baixo, width=40,height=40,image=img_3,font=('Ivy 10 bold'),relief=RAISED,overrelief=RIDGE,bg=co3,fg=co4)
+b_play.place(x=84, y= 35)
+
+#botão 4
+img_4 = Image.open('icon1.png')
+img_4 = img_4.resize((30,30))
+img_4 = ImageTk.PhotoImage(img_4)
+
+
+b_proximo = Button(frame_baixo, width=40,height=40,image=img_4,font=('Ivy 10 bold'),relief=RAISED,overrelief=RIDGE,bg=co3,fg=co4)
+b_proximo.place(x=130, y= 35)
+
+#botão 5
+img_5 = Image.open('icon1.png')
+img_5 = img_5.resize((30,30))
+img_5 = ImageTk.PhotoImage(img_5)
+
+
+b_pausar = Button(frame_baixo, width=40,height=40,image=img_5,font=('Ivy 10 bold'),relief=RAISED,overrelief=RIDGE,bg=co3,fg=co4)
+b_pausar.place(x=176, y= 35)
+
+#botão 6
+img_6 = Image.open('icon1.png')
+img_6 = img_6.resize((30,30))
+img_6 = ImageTk.PhotoImage(img_6)
+
+
+b_continuar = Button(frame_baixo, width=40,height=40,image=img_6,font=('Ivy 10 bold'),relief=RAISED,overrelief=RIDGE,bg=co3,fg=co4)
+b_continuar.place(x=222, y= 35)
+
+#botão 7
+img_7 = Image.open('icon1.png')
+img_7 = img_7.resize((30,30))
+img_7 = ImageTk.PhotoImage(img_7)
+
+
+b_stop = Button(frame_baixo, width=40,height=40,image=img_7,font=('Ivy 10 bold'),relief=RAISED,overrelief=RIDGE,bg=co3,fg=co4)
+b_stop.place(x=268, y= 35)
+
 janela.mainloop()
